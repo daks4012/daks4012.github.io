@@ -1,0 +1,49 @@
+#Product-BG {
+    background-color: #eee;
+    padding: 20px;
+}
+
+#Product-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.Product-Item {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.Product-Item img {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.ItemWrap{
+    position: relative;
+}
+
+.overlay-Wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 100%;
+    transition: all 1s;
+    opacity: 0;
+    color: white;
+}
+
+.overlay-Wrap:hover .overlay{
+    margin-top: 50%;
+    opacity: 1;
+}

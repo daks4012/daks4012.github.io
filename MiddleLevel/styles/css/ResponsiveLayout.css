@@ -1,0 +1,26 @@
+#product-container div {
+    margin: 10px 0 10px 0;
+    width: 25%;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 768px) {
+    #product-container div {
+        width: 50%;
+    }
+
+    .introduce-container h3 {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #product-container div {
+        width: 100%;
+    }
+}

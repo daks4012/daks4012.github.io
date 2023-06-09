@@ -1,0 +1,12 @@
+#flex-container {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 10px;
+}
+
+.flex-nav {
+    width: 75px;
+    margin: 10px;
+    display: inline-block; 
+}
