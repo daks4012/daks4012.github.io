@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPage Design</title>
+    <link rel="icon" href="../styles/assets/logo/Daks.png">
+    <link rel="stylesheet" href="../styles/css/AdminPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div id="SideArea">
+        <i class="fa-solid fa-house SideFA">
+            <p>&nbsp;&nbsp;HOME</p>
+        </i><br>
+        <i class="fa-solid fa-headphones SideFA">
+            <p>&nbsp;&nbsp;SERVICE</p>
+        </i><br>
+        <i class="fa-solid fa-flag SideFA">
+            <p>&nbsp;&nbsp;&nbsp;ALERTS</p>
+        </i><br>
+        <i class="fa-solid fa-chart-pie SideFA">
+            <p>&nbsp;&nbsp;STATUS</p>
+        </i>
+    </div>
+    <div id="ContentsArea">
+        <div id="Head-Container">
+            <div id="Search-Container">
+                <input id="SearchBTN" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass HeadFA"></i>
+            </div>
+            <div id="Utility-Container">
+                <i class="fa-solid fa-bell"></i>
+                <p class="Utility-NB">5</p>
+                <i class="fa-solid fa-envelope"></i>
+                <p class="Utility-NB">7</p>
+                <p>&nbsp;Daks</p>
+            </div>
+        </div>
+        <div id="DashboardContainer">
+            <h2 id="BoradText">Dash Borad</h2>
+            <div id="Dashboard-GridContainer">
+                <div class="Dashboard-GridItem">
+                    <p class="Dashboard-Itemtitle">Earings(Monthly)</p>
+                    &nbsp;
+                    <i class="fa-solid fa-calendar GridItem"></i>
+                    <br>
+                    <p class="Dashboard-Itemtext">$&nbsp;320,000</p>
+                </div>
+                <div class="Dashboard-GridItem">
+                    <p class="Dashboard-Itemtitle">Earings(Annual)</p>
+                    &nbsp;
+                    <i class="fa-regular fa-calendar-plus"></i>
+                    <br>
+                    <p class="Dashboard-Itemtext">$&nbsp;1,700,000</p>
+                </div>
+                <div class="Dashboard-GridItem">
+                    <p class="Dashboard-Itemtitle">Tasks</p>
+                    &nbsp;
+                    <i class="fa-solid fa-bars-progress"></i>
+                    <br>
+                    <p class="Dashboard-Itemtext">27</p>
+                </div>
+                <div class="Dashboard-GridItem">
+                    <p class="Dashboard-Itemtitle">Request</p>
+                    &nbsp;
+                    <i class="fa-regular fa-comment"></i>
+                    <br>
+                    <p class="Dashboard-Itemtext">44</p>
+                </div>
+            </div>
+        </div>
+        <div id="ContentsContainer">
+            <div id="ChartContainer">
+                <h3>Earnings Overview</h3>
+                <hr>
+                <canvas id="myChart"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                            datasets: [{
+                                label: '# of Votes',
+                                data: [12, 19, 3, 5, 2, 3],
+                                backgroundColor: '#A9D0F5',
+                                borderColor: '#000',
+                                borderWidth: 1.5
+                            }]
+                        },
+                        options: {
+                            responsive: false,
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                }
+                            }
+                        }
+                    });
+                </script>
+            </div>
+            <div id="TaskContainer">
+                <h3>Tasks</h3>
+                <hr>
+                <div class="TaskText">Notion coment<p class="NumberReminder">7</p>
+                </div>
+                <div class="TaskText">Git changes<p class="NumberReminder">13</p>
+                </div>
+                <div class="TaskText">Wished item<p class="NumberReminder">31</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
