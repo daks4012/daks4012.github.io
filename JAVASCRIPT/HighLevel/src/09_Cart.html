@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/css/Cart.css" rel="stylesheet">
+    <link rel="icon" href="../styles/assets/logo/Daks.png">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+        </script>
+    <link rel="fontawesome" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cart</title>
+</head>
+
+<body>
+    <div id="navContainer">
+        <img id="logoIMG" src="../styles/assets/logo/Daks.png">
+        <h2>HOME</h2>
+        <h3>스토어</h3>
+        <h3>시공견적</h3>
+    </div>
+    <div id="serchContainer">
+        <label>
+            <input id="serchInput" placeholder="&nbsp;상품 검색" onkeyup="filter()">
+        </label>
+    </div>
+    <div id="productContainer">
+        <!-- 데이터 바인딩 -->
+    </div>
+    <div id="cartContainer">
+        <h2>장바구니</h2>
+        <div id="cart"></div>
+    </div>
+    <div id="totalContainer">
+        <h2>총 가격</h2>
+        <div class="total"></div>
+        <button id="buyBTN">구매하기</button>
+    </div>
+    <div id="infoModal">
+        <div id="infoContainer">
+            <h2>이름</h2>
+            <input id="infoName" type="text">
+            <h2>전화번호</h2>
+            <input id="infoNum" type="tel"><br>
+            <button id="infoBTN">입력 완료</button>
+            <button class="closeBTN">닫기</button>
+        </div>
+    </div>
+    <div id="billModal">
+        <div id="billContainer">
+            <h2>영수증</h2>
+            <div id="bill"></div>
+            <div class="total"></div>
+            <button id="billBTN" class="closeBTN">닫기</button>
+        </div>
+    </div>
+
+    <script>
+        let products = [];
+        let cart = [];
+        let 주소 = 'https://daks4012.github.io/JAVASCRIPT/HighLevel/styles/assets/data/store.json';
+        $.get(주소).done(function (data) { //데이터 바인딩
+            storeArr = data.products; //자주 쓰니 변수화
+            storeArr.forEach(function (a, i) {
+                document.querySelectorAll('#productContainer')[0].insertAdjacentHTML("beforeend",
+                    `<div class="productCard" draggable="true" data-id="${a.id}">
+                        <img class="productIMG" draggable="false" src="https://daks4012.github.io/JAVASCRIPT/HighLevel/styles/assets/img/${a.photo}">
+                        <h3 class="title">${a.title}</h3>
+                        <h5 class="brand">${a.brand}</h5>
+                        <p>가격 : ${a.price}</p>
+                        <button class="productBTN" data-id="${a.id}">구매</button>
+                    </div>`
+                );
+            });
+            //구매버튼
+            $('.productBTN').click(function (e) { //상품목록 구매버튼 클릭
+                //현재 상품
+                let productId = e.target.dataset.id;
+                //cart에 상품이 없다면 추가, 있으면 개수 추가
+                //누를시 cart 배열에 객체 형태로 보관
+                let 번째 = cart.findIndex(function (a) {
+                    return a.id == productId
+                });
+                if (번째 == -1) {
+                    let 현재상품 = storeArr.find(function (a) {
+                        return a.id == productId
+                    });
+                    현재상품.count = 1;
+                    cart.push(현재상품);
+                } else {
+                    cart[번째].count++;
+                }
+                //담기버튼 누를 때 마다 cart 배열 안에있는 객체만큼 출력
+                $('#cart').html(''); //목록 밀어버리기
+                cart.forEach((a, i) => {
+                    $('#cart').append(`
+                        <div class="cartCard">
+                            <img class="productIMG" src="https://daks4012.github.io/JAVASCRIPT/HighLevel/styles/assets/img/${a.photo}">
+                            <h3 class="title">${a.title}</h3>
+                            <h5 class="brand">${a.brand}</h5>
+                            <p>${a.price}</p>
+                            <input type="number" value="${a.count}" class="item-count w-100">
+                        </div>
+                    `);
+                });
+                //총가격 계산
+                총가격();
+                //input값 조절시 총가격 조절
+                $('.item-count').on('input', function () {
+                    총가격();
+                });
+            });//구매버튼 끝
+            //드래그 기능
+            $('.productCard').on('dragstart', function (e) { //드래그
+                e.originalEvent.dataTransfer.setData('id', e.target.dataset.id);
+                console.log("드래그 시작");
+            });
+            $('#cart').on('dragover', function (e) { //드롭 친구
+                e.preventDefault();
+            });
+            $('#cart').on('drop', function (e) { //드롭
+                e.preventDefault();
+                let productId = e.originalEvent.dataTransfer.getData('id');
+                $('.productBTN').eq(productId).click();
+            });
+        });//get 끝
+
+        //총가격 계산해서 표기해주는 기능
+        function 총가격() {
+            let finalPrice = 0;
+            for (let i = 0; i < $('.item-count').length; i++) { //103열 input
+                var price = $('.item-count').eq(i).val();
+                var count = $('.item-count').eq(i).siblings('p').text();
+                finalPrice += parseFloat(price * count);
+            }
+            $('.total').html('합계 : ' + finalPrice);
+            console.log(finalPrice);
+        }
+
+        //닫기버튼
+        $('.closeBTN').on('click', function () {
+            document.querySelectorAll('#infoModal')[0].style.display = 'none';
+            document.querySelectorAll('#billModal')[0].style.display = 'none';
+        });
+
+        document.querySelectorAll('#buyBTN')[0].addEventListener('click', function () { //구매하기 버튼 클릭
+            document.querySelectorAll('#infoModal')[0].style.display = 'block';
+        });
+
+
+
+        function filter() { //검색기능
+            let search = document.getElementById("serchInput").value.toLowerCase();
+            let listInner = document.getElementsByClassName("productCard");
+            for (let i = 0; i < listInner.length; i++) {
+                title = listInner[i].getElementsByClassName("title");
+                brand = listInner[i].getElementsByClassName("brand");
+                if (title[0].innerHTML.toLowerCase().indexOf(search) != -1 ||
+                    brand[0].innerHTML.toLowerCase().indexOf(search) != -1
+                ) {
+                    listInner[i].style.display = "grid";
+                } else {
+                    listInner[i].style.display = "none";
+                }
+            }
+        }
+
+        //모달1 신상입력
+        let 이름 = '';
+        let 전화번호 = '';
+
+        //입력 될때마다 값 저장
+        document.getElementById('infoName').addEventListener('input', function () {
+            이름 = document.getElementById('infoName').value;
+        });
+        document.getElementById('infoName').addEventListener('input', function () {
+            전화번호 = document.getElementById('infoNum').value;
+        });
+
+        //모달 입력완료 버튼
+        document.getElementById('infoBTN').addEventListener('click', function () {
+            if ((이름 == "" && 이름 == '') && (전화번호 == "" && 전화번호 == '')) {
+                alert("이름과 번호를 다시 확인해주세요.");
+            } else {
+                document.querySelectorAll('#infoModal')[0].style.display = 'none';
+                document.querySelectorAll('#billModal')[0].style.display = 'block';
+                $('#bill').html('');
+                cart.forEach((a, i) => {
+                    $('#bill').append(`
+                        <div class="billItem">
+                            <h3>상품명 : ${a.title}</h3>
+                            <h5>제조사 : ${a.brand}</h5>
+                            <p>개당 가격 : ${a.price}</p>
+                            <p>개수 : ${a.count}</p>
+                        </div>
+                    `);
+                });
+                총가격();
+            }
+        });
+    </script>
+</body>
+
+</html>
