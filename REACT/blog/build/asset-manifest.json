@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "//REACT/blog/static/css/main.e4f90e92.css",
+    "main.js": "//REACT/blog/static/js/main.677dda78.js",
+    "static/js/787.f587e8d5.chunk.js": "//REACT/blog/static/js/787.f587e8d5.chunk.js",
+    "static/media/Maplestory Light.ttf": "//REACT/blog/static/media/Maplestory Light.9d9497585053c96c8082.ttf",
+    "index.html": "//REACT/blog/index.html",
+    "main.e4f90e92.css.map": "//REACT/blog/static/css/main.e4f90e92.css.map",
+    "main.677dda78.js.map": "//REACT/blog/static/js/main.677dda78.js.map",
+    "787.f587e8d5.chunk.js.map": "//REACT/blog/static/js/787.f587e8d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4f90e92.css",
+    "static/js/main.677dda78.js"
+  ]
+}
