@@ -19,12 +19,5 @@
         "content": "Born in calendula",
         "price": 105,
         "writer": "silviarita"
-    },
-    {
-        "id": 9,
-        "title": "Primal aromatherapy",
-        "content": "Born in aromatherapy",
-        "price": 145,
-        "writer": "kerdkanno"
     }
 ]
