@@ -19,5 +19,12 @@
         "content": "Born in calendula",
         "price": 105,
         "writer": "silviarita"
+    },
+    {
+        "id": 9,
+        "title": "fun green ball",
+        "content": "Born to have fun",
+        "price": 110,
+        "writer": "unknown"
     }
 ]
