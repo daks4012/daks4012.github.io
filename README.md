@@ -4,5 +4,5 @@ check the page by entering the path in '~'<br>
 EX)<br>
 https://daks4012.github.io/HTML5%26CSS3/MiddleLevel/src/07_LandingPage.html
 https://daks4012.github.io/JAVASCRIPT/HighLevel/src/09_Cart.html<br>
-https://daks4012.github.io/REACT/blog/
+https://daks4012.github.io/REACT/blog/<br>
 https://daks4012.github.io/REACT/shop/
