@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/REACT/shop/static/css/main.58129653.css",
-    "main.js": "/REACT/shop/static/js/main.5ba5dc7e.js",
+    "main.js": "/REACT/shop/static/js/main.09e69cc5.js",
     "static/js/121.fdb3ca2b.chunk.js": "/REACT/shop/static/js/121.fdb3ca2b.chunk.js",
     "static/js/407.d2d2c947.chunk.js": "/REACT/shop/static/js/407.d2d2c947.chunk.js",
     "static/js/215.a37d66ba.chunk.js": "/REACT/shop/static/js/215.a37d66ba.chunk.js",
@@ -13,7 +13,7 @@
     "static/media/lemon-906141_1920.jpg": "/REACT/shop/static/media/lemon-906141_1920.fabd22b12a2d7519436e.jpg",
     "index.html": "/REACT/shop/index.html",
     "main.58129653.css.map": "/REACT/shop/static/css/main.58129653.css.map",
-    "main.5ba5dc7e.js.map": "/REACT/shop/static/js/main.5ba5dc7e.js.map",
+    "main.09e69cc5.js.map": "/REACT/shop/static/js/main.09e69cc5.js.map",
     "121.fdb3ca2b.chunk.js.map": "/REACT/shop/static/js/121.fdb3ca2b.chunk.js.map",
     "407.d2d2c947.chunk.js.map": "/REACT/shop/static/js/407.d2d2c947.chunk.js.map",
     "215.a37d66ba.chunk.js.map": "/REACT/shop/static/js/215.a37d66ba.chunk.js.map",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.58129653.css",
-    "static/js/main.5ba5dc7e.js"
+    "static/js/main.09e69cc5.js"
   ]
 }
