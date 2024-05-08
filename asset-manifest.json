@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/REACT/shop/static/css/main.036c0f46.css",
+    "main.js": "/REACT/shop/static/js/main.ccf5183c.js",
+    "static/js/210.d9fa3961.chunk.js": "/REACT/shop/static/js/210.d9fa3961.chunk.js",
+    "static/js/624.873adce0.chunk.js": "/REACT/shop/static/js/624.873adce0.chunk.js",
+    "static/js/28.ee8120e5.chunk.js": "/REACT/shop/static/js/28.ee8120e5.chunk.js",
+    "static/js/709.a12d438f.chunk.js": "/REACT/shop/static/js/709.a12d438f.chunk.js",
+    "static/js/453.6fd463f7.chunk.js": "/REACT/shop/static/js/453.6fd463f7.chunk.js",
+    "static/js/244.33678e15.chunk.js": "/REACT/shop/static/js/244.33678e15.chunk.js",
+    "static/js/184.c29d511e.chunk.js": "/REACT/shop/static/js/184.c29d511e.chunk.js",
+    "static/media/Maplestory Light.ttf": "/REACT/shop/static/media/Maplestory Light.9d9497585053c96c8082.ttf",
+    "static/media/lemon-906141_1920.jpg": "/REACT/shop/static/media/lemon-906141_1920.fabd22b12a2d7519436e.jpg",
+    "index.html": "/REACT/shop/index.html",
+    "main.036c0f46.css.map": "/REACT/shop/static/css/main.036c0f46.css.map",
+    "main.ccf5183c.js.map": "/REACT/shop/static/js/main.ccf5183c.js.map",
+    "210.d9fa3961.chunk.js.map": "/REACT/shop/static/js/210.d9fa3961.chunk.js.map",
+    "624.873adce0.chunk.js.map": "/REACT/shop/static/js/624.873adce0.chunk.js.map",
+    "28.ee8120e5.chunk.js.map": "/REACT/shop/static/js/28.ee8120e5.chunk.js.map",
+    "709.a12d438f.chunk.js.map": "/REACT/shop/static/js/709.a12d438f.chunk.js.map",
+    "453.6fd463f7.chunk.js.map": "/REACT/shop/static/js/453.6fd463f7.chunk.js.map",
+    "244.33678e15.chunk.js.map": "/REACT/shop/static/js/244.33678e15.chunk.js.map",
+    "184.c29d511e.chunk.js.map": "/REACT/shop/static/js/184.c29d511e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.036c0f46.css",
+    "static/js/main.ccf5183c.js"
+  ]
+}
