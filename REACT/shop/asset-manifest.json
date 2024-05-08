@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/REACT/shop/static/css/main.036c0f46.css",
-    "main.js": "/REACT/shop/static/js/main.e3898060.js",
-    "static/js/210.84011bfd.chunk.js": "/REACT/shop/static/js/210.84011bfd.chunk.js",
+    "main.js": "/REACT/shop/static/js/main.12763810.js",
+    "static/js/210.bde37da3.chunk.js": "/REACT/shop/static/js/210.bde37da3.chunk.js",
     "static/js/624.873adce0.chunk.js": "/REACT/shop/static/js/624.873adce0.chunk.js",
     "static/js/28.ee8120e5.chunk.js": "/REACT/shop/static/js/28.ee8120e5.chunk.js",
     "static/js/709.a12d438f.chunk.js": "/REACT/shop/static/js/709.a12d438f.chunk.js",
@@ -11,10 +11,11 @@
     "static/js/184.c29d511e.chunk.js": "/REACT/shop/static/js/184.c29d511e.chunk.js",
     "static/media/Maplestory Light.ttf": "/REACT/shop/static/media/Maplestory Light.9d9497585053c96c8082.ttf",
     "static/media/lemon-906141_1920.jpg": "/REACT/shop/static/media/lemon-906141_1920.fabd22b12a2d7519436e.jpg",
+    "static/media/Daks.png": "/REACT/shop/static/media/Daks.c7ff5b44b9b850cc1cc9.png",
     "index.html": "/REACT/shop/index.html",
     "main.036c0f46.css.map": "/REACT/shop/static/css/main.036c0f46.css.map",
-    "main.e3898060.js.map": "/REACT/shop/static/js/main.e3898060.js.map",
-    "210.84011bfd.chunk.js.map": "/REACT/shop/static/js/210.84011bfd.chunk.js.map",
+    "main.12763810.js.map": "/REACT/shop/static/js/main.12763810.js.map",
+    "210.bde37da3.chunk.js.map": "/REACT/shop/static/js/210.bde37da3.chunk.js.map",
     "624.873adce0.chunk.js.map": "/REACT/shop/static/js/624.873adce0.chunk.js.map",
     "28.ee8120e5.chunk.js.map": "/REACT/shop/static/js/28.ee8120e5.chunk.js.map",
     "709.a12d438f.chunk.js.map": "/REACT/shop/static/js/709.a12d438f.chunk.js.map",
@@ -24,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.036c0f46.css",
-    "static/js/main.e3898060.js"
+    "static/js/main.12763810.js"
   ]
 }
