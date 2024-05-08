@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/REACT/shop/static/css/main.036c0f46.css",
-    "main.js": "/REACT/shop/static/js/main.ccf5183c.js",
+    "main.js": "/REACT/shop/static/js/main.3534c810.js",
     "static/js/210.d9fa3961.chunk.js": "/REACT/shop/static/js/210.d9fa3961.chunk.js",
     "static/js/624.873adce0.chunk.js": "/REACT/shop/static/js/624.873adce0.chunk.js",
     "static/js/28.ee8120e5.chunk.js": "/REACT/shop/static/js/28.ee8120e5.chunk.js",
@@ -13,7 +13,7 @@
     "static/media/lemon-906141_1920.jpg": "/REACT/shop/static/media/lemon-906141_1920.fabd22b12a2d7519436e.jpg",
     "index.html": "/REACT/shop/index.html",
     "main.036c0f46.css.map": "/REACT/shop/static/css/main.036c0f46.css.map",
-    "main.ccf5183c.js.map": "/REACT/shop/static/js/main.ccf5183c.js.map",
+    "main.3534c810.js.map": "/REACT/shop/static/js/main.3534c810.js.map",
     "210.d9fa3961.chunk.js.map": "/REACT/shop/static/js/210.d9fa3961.chunk.js.map",
     "624.873adce0.chunk.js.map": "/REACT/shop/static/js/624.873adce0.chunk.js.map",
     "28.ee8120e5.chunk.js.map": "/REACT/shop/static/js/28.ee8120e5.chunk.js.map",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.036c0f46.css",
-    "static/js/main.ccf5183c.js"
+    "static/js/main.3534c810.js"
   ]
 }
