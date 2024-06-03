@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/REACT/shop/static/css/main.036c0f46.css",
-    "main.js": "/REACT/shop/static/js/main.d7124f44.js",
+    "main.js": "/REACT/shop/static/js/main.bb4963bd.js",
     "static/js/210.ec688364.chunk.js": "/REACT/shop/static/js/210.ec688364.chunk.js",
     "static/js/624.873adce0.chunk.js": "/REACT/shop/static/js/624.873adce0.chunk.js",
-    "static/js/28.1cbc03a1.chunk.js": "/REACT/shop/static/js/28.1cbc03a1.chunk.js",
-    "static/js/709.0e3e7596.chunk.js": "/REACT/shop/static/js/709.0e3e7596.chunk.js",
+    "static/js/28.d5261caf.chunk.js": "/REACT/shop/static/js/28.d5261caf.chunk.js",
+    "static/js/709.4133bd3a.chunk.js": "/REACT/shop/static/js/709.4133bd3a.chunk.js",
     "static/js/453.6fd463f7.chunk.js": "/REACT/shop/static/js/453.6fd463f7.chunk.js",
     "static/js/244.33678e15.chunk.js": "/REACT/shop/static/js/244.33678e15.chunk.js",
     "static/js/184.c29d511e.chunk.js": "/REACT/shop/static/js/184.c29d511e.chunk.js",
@@ -14,17 +14,17 @@
     "static/media/Daks.png": "/REACT/shop/static/media/Daks.c7ff5b44b9b850cc1cc9.png",
     "index.html": "/REACT/shop/index.html",
     "main.036c0f46.css.map": "/REACT/shop/static/css/main.036c0f46.css.map",
-    "main.d7124f44.js.map": "/REACT/shop/static/js/main.d7124f44.js.map",
+    "main.bb4963bd.js.map": "/REACT/shop/static/js/main.bb4963bd.js.map",
     "210.ec688364.chunk.js.map": "/REACT/shop/static/js/210.ec688364.chunk.js.map",
     "624.873adce0.chunk.js.map": "/REACT/shop/static/js/624.873adce0.chunk.js.map",
-    "28.1cbc03a1.chunk.js.map": "/REACT/shop/static/js/28.1cbc03a1.chunk.js.map",
-    "709.0e3e7596.chunk.js.map": "/REACT/shop/static/js/709.0e3e7596.chunk.js.map",
+    "28.d5261caf.chunk.js.map": "/REACT/shop/static/js/28.d5261caf.chunk.js.map",
+    "709.4133bd3a.chunk.js.map": "/REACT/shop/static/js/709.4133bd3a.chunk.js.map",
     "453.6fd463f7.chunk.js.map": "/REACT/shop/static/js/453.6fd463f7.chunk.js.map",
     "244.33678e15.chunk.js.map": "/REACT/shop/static/js/244.33678e15.chunk.js.map",
     "184.c29d511e.chunk.js.map": "/REACT/shop/static/js/184.c29d511e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.036c0f46.css",
-    "static/js/main.d7124f44.js"
+    "static/js/main.bb4963bd.js"
   ]
 }
